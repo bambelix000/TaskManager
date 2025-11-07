@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>EmployeeWindow</class>
+	<widget class="QMainWindow" name="EmployeeWindow">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>900</width>
+				<height>600</height>
+			</rect>
+		</property>
+		<property name="windowTitle">
+			<string>Panel Pracownika</string>
+		</property>
+		<widget class="QWidget" name="centralwidget">
+			<layout class="QHBoxLayout" name="horizontalLayoutMain">
+				<item>
+					<widget class="QFrame" name="menuFrame">
+						<property name="frameShape">
+							<enum>QFrame::StyledPanel</enum>
+						</property>
+						<layout class="QVBoxLayout" name="menuLayout">
+							<item>
+								<widget class="QPushButton" name="btnTasks">
+									<property name="text">
+										<string>Moje zadania</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="btnSchedule">
+									<property name="text">
+										<string>Grafik</string>
+									</property>
+								</widget>
+							</item>
+							<item>
+								<widget class="QPushButton" name="btnLogout">
+									<property name="text">
+										<string>Wyloguj</string>
+									</property>
+								</widget>
+							</item>
+						</layout>
+					</widget>
+				</item>
+				<item>
+					<widget class="QStackedWidget" name="stackedWidget">
+						<widget class="QWidget" name="pageTasks">
+							<layout class="QVBoxLayout" name="verticalLayoutSearch">
+								<item>
+									<layout class="QHBoxLayout" name="searchSortLayout">
+										<item>
+											<widget class="QLabel" name="labelSearch">
+												<property name="text">
+													<string>Szukaj:</string>
+												</property>
+											</widget>
+										</item>
+										<item>
+											<widget class="QLineEdit" name="lineEditSearch"/>
+										</item>
+										<item>
+											<widget class="QLabel" name="labelSort">
+												<property name="text">
+													<string>Sortuj wg:</string>
+												</property>
+											</widget>
+										</item>
+										<item>
+											<widget class="QComboBox" name="comboSort">
+												<item>
+													<property name="text">
+														<string>Brak</string>
+													</property>
+												</item>
+												<item>
+													<property name="text">
+														<string>Deadline ↑</string>
+													</property>
+												</item>
+												<item>
+													<property name="text">
+														<string>Deadline ↓</string>
+													</property>
+												</item>
+												<item>
+													<property name="text">
+														<string>Priorytet ↓</string>
+													</property>
+												</item>
+												<item>
+													<property name="text">
+														<string>Priorytet ↑</string>
+													</property>
+												</item>
+											</widget>
+										</item>
+									</layout>
+								</item>
+								<item>
+									<widget class="QTableWidget" name="tableWidgetTasks">
+										<property name="columnCount">
+											<number>5</number>
+										</property>
+										<property name="horizontalHeaderLabels">
+											<stringlist>
+												<string>Tytuł</string>
+												<string>Deadline</string>
+												<string>Data dodania</string>
+												<string>Priorytet</string>
+												<string>Gotowość</string>
+											</stringlist>
+										</property>
+									</widget>
+								</item>
+
+							</layout>
+						</widget>
+						<widget class="QWidget" name="pageSchedule">
+							<layout class="QVBoxLayout" name="layoutSchedule">
+								<item>
+									<layout class="QHBoxLayout" name="daysLayout">
+										<item>
+											<widget class="QPushButton" name="btnPrevDays">
+												<property name="text">
+													<string>←</string>
+												</property>
+											</widget>
+										</item>
+										<item>
+											<widget class="QGroupBox" name="groupDay1">
+												<property name="title">
+													<string>3.06.2025</string>
+												</property>
+												<layout class="QVBoxLayout" name="layoutDay1">
+													<item>
+														<widget class="QLabel" name="labelFrom1">
+															<property name="text">
+																<string>Dostępny od:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeFrom1">
+															<property name="time">
+																<time>08:00:00</time>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QLabel" name="labelTo1">
+															<property name="text">
+																<string>Dostępny do:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeTo1">
+															<property name="time">
+																<time>16:00:00</time>
+															</property>
+														</widget>
+													</item>
+												</layout>
+											</widget>
+										</item>
+										<item>
+											<widget class="QGroupBox" name="groupDay2">
+												<property name="title">
+													<string>4.06.2025</string>
+												</property>
+												<layout class="QVBoxLayout" name="layoutDay2">
+													<item>
+														<widget class="QLabel" name="labelFrom2">
+															<property name="text">
+																<string>Dostępny od:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeFrom2">
+															<property name="time">
+																<time>08:00:00</time>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QLabel" name="labelTo2">
+															<property name="text">
+																<string>Dostępny do:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeTo2">
+															<property name="time">
+																<time>16:00:00</time>
+															</property>
+														</widget>
+													</item>
+												</layout>
+											</widget>
+										</item>
+										<item>
+											<widget class="QGroupBox" name="groupDay3">
+												<property name="title">
+													<string>5.06.2025</string>
+												</property>
+												<layout class="QVBoxLayout" name="layoutDay3">
+													<item>
+														<widget class="QLabel" name="labelFrom3">
+															<property name="text">
+																<string>Dostępny od:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeFrom3">
+															<property name="time">
+																<time>08:00:00</time>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QLabel" name="labelTo3">
+															<property name="text">
+																<string>Dostępny do:</string>
+															</property>
+														</widget>
+													</item>
+													<item>
+														<widget class="QTimeEdit" name="timeTo3">
+															<property name="time">
+																<time>16:00:00</time>
+															</property>
+														</widget>
+													</item>
+												</layout>
+											</widget>
+										</item>
+										<item>
+											<widget class="QPushButton" name="btnNextDays">
+												<property name="text">
+													<string>→</string>
+												</property>
+											</widget>
+										</item>
+
+									</layout>
+								</item>
+								<item>
+									<widget class="QPushButton" name="buttonSaveSchedule">
+										<property name="text">
+											<string>Zapisz grafik</string>
+										</property>
+									</widget>
+								</item>
+
+							</layout>
+						</widget>
+					</widget>
+				</item>
+			</layout>
+		</widget>
+		<widget class="QStatusBar" name="statusbar"/>
+	</widget>
+	<resources/>
+	<connections/>
+</ui>

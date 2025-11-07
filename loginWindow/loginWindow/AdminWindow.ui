@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QMainWindow" name="AdminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Panel Administratora</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="menuFrame">
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <layout class="QVBoxLayout" name="menuLayout">
+       <item>
+        <widget class="QPushButton" name="btnNewTask">
+         <property name="text">
+          <string>Nowe zadanie</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSearchTasks">
+         <property name="text">
+          <string>Wyszukaj zadanie</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnAddEmployee">
+         <property name="text">
+          <string>Dodaj pracownika</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSchedule">
+         <property name="text">
+          <string>Grafik pracowników</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLogout">
+         <property name="text">
+          <string>Wyloguj</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="pageNewTask">
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelTaskName">
+          <property name="text">
+           <string>Nazwa zadania</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="editTaskName"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelTaskDesc">
+          <property name="text">
+           <string>Opis</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTextEdit" name="editTaskDesc"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelDate">
+          <property name="text">
+           <string>Deadline</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDateEdit" name="dateEditTask"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="labelPriority">
+          <property name="text">
+           <string>Priorytet</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="comboPriority">
+          <item>
+           <property name="text">
+            <string>Niski</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Średni</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Wysoki</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="labelAssignTo">
+          <property name="text">
+           <string>Przypisz do</string>
+          </property>
+         </widget>
+        </item>
+		   <item row="4" column="1">
+			   <layout class="QHBoxLayout" name="assignLayout">
+				   <item>
+					   <widget class="QComboBox" name="comboAssignTo"/>
+				   </item>
+				   <item>
+					   <widget class="QPushButton" name="btnAutoAssign">
+						   <property name="text">
+							   <string>Automatyczne przydzielanie</string>
+						   </property>
+					   </widget>
+				   </item>
+			   </layout>
+		   </item>
+        <item row="5" column="1">
+         <widget class="QPushButton" name="btnSaveTask">
+          <property name="text">
+           <string>Zapisz zadanie</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageAddEmployee">
+       <layout class="QFormLayout" name="formLayoutAddEmployee">
+        <item row="0" column="0">
+         <widget class="QLabel" name="labelFirstName">
+          <property name="text">
+           <string>Imię</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEditFirstName"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="labelLastName">
+          <property name="text">
+           <string>Nazwisko</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEditLastName"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="labelEmail">
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEditEmail"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="labelLogin">
+          <property name="text">
+           <string>Login</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEditLogin"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="labelPassword">
+          <property name="text">
+           <string>Hasło</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEditPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="labelRole">
+          <property name="text">
+           <string>Rola</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="comboBoxRole">
+          <item>
+           <property name="text">
+            <string>admin</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>employee</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="btnAddEmployeeConfirm">
+          <property name="text">
+           <string>Dodaj pracownika</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+		 <widget class="QWidget" name="pageSearchTasks">
+			 <layout class="QVBoxLayout" name="verticalLayoutSearch">
+				 <item>
+					 <layout class="QHBoxLayout" name="searchSortLayout">
+						 <item>
+							 <widget class="QLabel" name="labelSearch">
+								 <property name="text">
+									 <string>Szukaj:</string>
+								 </property>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QLineEdit" name="lineEditSearch"/>
+						 </item>
+						 <item>
+							 <widget class="QLabel" name="labelSort">
+								 <property name="text">
+									 <string>Sortuj wg:</string>
+								 </property>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QComboBox" name="comboSort">
+								 <item>
+									 <property name="text">
+										 <string>Brak</string>
+									 </property>
+								 </item>
+								 <item>
+									 <property name="text">
+										 <string>Deadline ↑</string>
+									 </property>
+								 </item>
+								 <item>
+									 <property name="text">
+										 <string>Deadline ↓</string>
+									 </property>
+								 </item>
+								 <item>
+									 <property name="text">
+										 <string>Priorytet ↓</string>
+									 </property>
+								 </item>
+								 <item>
+									 <property name="text">
+										 <string>Priorytet ↑</string>
+									 </property>
+								 </item>
+							 </widget>
+						 </item>
+					 </layout>
+				 </item>
+				 <item>
+					 <widget class="QTableWidget" name="tableWidgetTasks">
+						 <property name="columnCount">
+							 <number>6</number>
+						 </property>
+						 <property name="horizontalHeaderLabels">
+							 <stringlist>
+								 <string>Tytuł</string>
+								 <string>Pracownik</string>
+								 <string>Deadline</string>
+								 <string>Data dodania</string>
+								 <string>Priorytet</string>
+								 <string>Gotowość</string>
+							 </stringlist>
+						 </property>
+					 </widget>
+				 </item>
+			 </layout>
+		 </widget>
+		 <widget class="QWidget" name="pageEmployeeSchedule">
+			 <layout class="QVBoxLayout" name="verticalLayoutSchedule">
+				 <item>
+					 <layout class="QHBoxLayout" name="topScheduleLayout">
+						 <item>
+							 <widget class="QLabel" name="labelSelectEmployee">
+								 <property name="text">
+									 <string>Wybierz pracownika:</string>
+								 </property>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QComboBox" name="comboSelectEmployee"/>
+						 </item>
+					 </layout>
+				 </item>
+				 <item>
+					 <layout class="QHBoxLayout" name="daysLayout">
+						 <item>
+							 <widget class="QPushButton" name="btnPrevDays">
+								 <property name="text">
+									 <string>←</string>
+								 </property>
+								 <property name="minimumWidth">
+									 <number>40</number>
+								 </property>
+								 <property name="maximumWidth">
+									 <number>60</number>
+								 </property>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QGroupBox" name="groupDay1">
+								 <property name="title">
+									 <string>Dzień 1</string>
+								 </property>
+								 <layout class="QVBoxLayout" name="verticalLayoutDay1">
+									 <item>
+										 <widget class="QWidget" name="scheduleBars1">
+											 <property name="sizePolicy">
+												 <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+											 </property>
+										 </widget>
+									 </item>
+								 </layout>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QGroupBox" name="groupDay2">
+								 <property name="title">
+									 <string>Dzień 1</string>
+								 </property>
+								 <layout class="QVBoxLayout" name="verticalLayoutDay2">
+									 <item>
+										 <widget class="QWidget" name="scheduleBars2">
+											 <property name="sizePolicy">
+												 <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+											 </property>
+										 </widget>
+									 </item>
+								 </layout>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QGroupBox" name="groupDay3">
+								 <property name="title">
+									 <string>Dzień 1</string>
+								 </property>
+								 <layout class="QVBoxLayout" name="verticalLayoutDay3">
+									 <item>
+										 <widget class="QWidget" name="scheduleBars3">
+											 <property name="sizePolicy">
+												 <sizepolicy hsizetype="Expanding" vsizetype="Expanding"/>
+											 </property>
+										 </widget>
+									 </item>
+								 </layout>
+							 </widget>
+						 </item>
+						 <item>
+							 <widget class="QPushButton" name="btnNextDays">
+								 <property name="text">
+									 <string>→</string>
+								 </property>
+								 <property name="minimumWidth">
+									 <number>40</number>
+								 </property>
+								 <property name="maximumWidth">
+									 <number>60</number>
+								 </property>
+							 </widget>
+						 </item>
+					 </layout>
+				 </item>
+			 </layout>
+		 </widget>
+		 
+	 </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

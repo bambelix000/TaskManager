@@ -1,0 +1,20 @@
+Zaplanuj spotkanie zespołu;Ustal termin i przygotuj agendę spotkania tygodniowego;2025-06-05;2;2025-06-02T10:15:01;0;Średni
+Przygotuj raport kwartalny;Zbierz dane finansowe za ostatni kwartał i wygeneruj raport;2025-06-10;2;2025-06-02T10:20:15;0;Wysoki
+Przeszkol nowego pracownika;Wprowadzenie do systemów i zasad pracy;2025-06-07;2;2025-06-02T10:25:30;0;Średni
+Skontaktuj się z klientem X;Zadzwoń i potwierdź szczegóły zamówienia;2025-06-03;2;2025-06-02T10:26:50;0;Niski
+Zamów materiały biurowe;Sporządź listę brakujących artykułów i złóż zamówienie;2025-06-04;2;2025-06-02T10:28:00;0;Niski
+Napisz artykuł na bloga;Temat: Nowe trendy w zarządzaniu projektami;2025-06-12;2;2025-06-02T10:30:10;0;Średni
+Kup marchewki;Kup marchewki w Lidlu na promocji;2025-07-01;2;2025-06-28T20:08:27;0;Wysoki
+Zrób backup danych;Wykonaj pełne kopiowanie zapasowe danych z serwera;2025-06-05;5;2025-06-02T10:32:00;1;Wysoki
+Zaktualizuj dokumentację techniczną;Dodaj nowe moduły i zmiany z ostatniego sprintu;2025-06-09;5;2025-06-02T10:35:22;1;Średni
+Przygotuj prezentację dla zarządu;Zawartość: podsumowanie ostatniego miesiąca;2025-06-08;5;2025-06-02T10:37:10;1;Wysoki
+Wystaw faktury za maj;Sprawdź dane klientów i wyślij faktury;2025-06-04;5;2025-06-02T10:40:00;1;Średni
+Oceń kandydatów z rekrutacji;Przejrzyj CV i wypełnij formularz oceny;2025-06-06;5;2025-06-02T10:42:15;1;Niski
+Zoptymalizuj kampanię reklamową;Sprawdź skuteczność reklam i wprowadź zmiany;2025-06-11;5;2025-06-02T10:45:05;1;Średni
+Zorganizuj szkolenie BHP;Skontaktuj się z firmą szkoleniową i ustal termin;2025-06-07;5;2025-06-02T10:48:00;1;Wysoki
+Utwórz konta dla nowych pracowników;Załóż e-maile i dostęp do systemów;2025-06-05;5;2025-06-02T10:49:30;1;Średni
+Zbadaj rynek konkurencji;Sporządź analizę działań konkurencji w ostatnim kwartale;2025-06-13;5;2025-06-02T10:51:12;1;Średni
+Skonfiguruj nowe drukarki;Zainstaluj sterowniki i przetestuj urządzenia;2025-06-06;5;2025-06-02T10:53:45;1;Niski
+Przygotuj newsletter;Treść: podsumowanie wydarzeń firmowych w maju;2025-06-08;5;2025-06-02T10:55:10;1;Niski
+Zaprojektuj ulotkę promocyjną;Ulotka dla nowej kampanii marketingowej;2025-06-09;5;2025-06-02T10:56:30;1;Średni
+Sprawdź stan zapasów magazynowych;Zrób inwentaryzację i uzupełnij braki;2025-06-03;5;2025-06-02T10:58:00;1;Wysoki
