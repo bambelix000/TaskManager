@@ -53,21 +53,29 @@ The system demonstrates solid programming principles, file-based data persistenc
 - **Framework:** Qt 6.9.0  
 - **IDE:** Visual Studio 2022  
 - **Data Storage:** Plain text files (`.txt`)  
-- **Design Patterns:** Singleton, Observer, Builder  
 
 ---
 
 ## ▶️ How to Run the Project (Visual Studio)
 
 1. Open **Visual Studio 2022**.  
-2. Choose **Open Project / Solution** and select the `.pro` or `.sln` file.  
+2. Choose **Open Project / Solution** and select the `.sln` file.  
 3. In project settings, make sure to set:
    - **Qt Version:** `Qt 6.9.0`
-   - **Configuration:** `Release` or `Debug`
+   - **Configuration:** `Debug`
 4. Press **Run (F5)**.  
 5. The application will start and display the login window.
 
 ---
 
-## 🧰 Project Structure
+## 🖼️ Screenshots
+
+### 🔐 Login Window
+![Login Window](images/login_window.png)
+
+### 🛠️ Admin Panel
+![Admin Panel](images/admin_panel.png)
+
+### 👷 Employee View
+![Employee Panel](images/employee_panel.png)
 
