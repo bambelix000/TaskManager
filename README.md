@@ -75,6 +75,8 @@ The system demonstrates solid programming principles, file-based data persistenc
 
 ### 🛠️ Admin Panel
 ![Admin Panel](images/admin_panel.png)
+### 🛠️ Admin Schedule Panel
+![Admin Panel](images/admin_panel2.png)
 
 ### 👷 Employee View
 ![Employee Panel](images/employee_panel.png)
